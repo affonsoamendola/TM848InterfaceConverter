@@ -1,0 +1,428 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR?
+U 1 1 5B64A63F
+P 1950 4250
+F 0 "#PWR?" H 1950 4000 50  0001 C CNN
+F 1 "GND" H 1950 4100 50  0000 C CNN
+F 2 "" H 1950 4250 50  0000 C CNN
+F 3 "" H 1950 4250 50  0000 C CNN
+	1    1950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X25 S
+U 1 1 5B64A764
+P 2350 2950
+F 0 "S" H 2350 4250 50  0000 C CNN
+F 1 "Shugart Interface" V 2350 2950 50  0000 C CNN
+F 2 "" H 2350 2200 50  0000 C CNN
+F 3 "" H 2350 2200 50  0000 C CNN
+	1    2350 2950
+	1    0    0    -1  
+$EndComp
+Text Label 2600 1750 0    60   ~ 0
+WriteCurrentSwitch
+Text Label 2600 1850 0    60   ~ 0
+AlternateInputOutput
+Text Label 2600 1950 0    60   ~ 0
+MotorOffContrl
+Text Label 2600 2050 0    60   ~ 0
+AlternateInputOutput
+Text Label 2600 2150 0    60   ~ 0
+TwoSided(OnlyInTM848-2)
+Text Label 2600 2250 0    60   ~ 0
+DiskChange(Strappable)
+Text Label 2600 2350 0    60   ~ 0
+SideSelect(OnlyInTM848-2)
+Text Label 2600 2450 0    60   ~ 0
+ActivityIndicator(Strappable)
+Text Label 2600 2550 0    60   ~ 0
+NC
+Text Label 2600 2650 0    60   ~ 0
+Index
+Text Label 2600 2750 0    60   ~ 0
+Ready
+Text Label 2600 2850 0    60   ~ 0
+AlternateInputOutput
+Text Label 2600 2950 0    60   ~ 0
+DriveSelect1(SideSelectOption,TM848-2Only)
+Text Label 2600 3050 0    60   ~ 0
+DriveSelect2(SideSelectOption,TM848-2Only)
+Text Label 2600 3150 0    60   ~ 0
+DriveSelect3(SideSelectOption,TM848-2Only)
+Text Label 2600 3250 0    60   ~ 0
+DriveSelect4(SideSelectOption,TM848-2Only)
+Text Label 2600 3350 0    60   ~ 0
+DirectionSelect(SideSelectOption,TM848-2Only)
+Text Label 2600 3450 0    60   ~ 0
+Step
+Text Label 2600 3550 0    60   ~ 0
+WriteData
+Text Label 2600 3650 0    60   ~ 0
+WriteGate
+Text Label 2600 3750 0    60   ~ 0
+Track00
+Text Label 2600 3850 0    60   ~ 0
+WriteProtect
+Text Label 2600 3950 0    60   ~ 0
+ReadData
+Text Label 2600 4050 0    60   ~ 0
+AlternateInputOutput
+Text Label 2600 4150 0    60   ~ 0
+AlternateInputOutput
+$Comp
+L CONN_02X17 I
+U 1 1 5B64B66B
+P 9350 2500
+F 0 "I" H 9350 3400 50  0000 C CNN
+F 1 "IDC Connetor" V 9350 2500 50  0000 C CNN
+F 2 "" H 9350 1400 50  0000 C CNN
+F 3 "" H 9350 1400 50  0000 C CNN
+	1    9350 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B64B7C0
+P 9700 3350
+F 0 "#PWR?" H 9700 3100 50  0001 C CNN
+F 1 "GND" H 9700 3200 50  0000 C CNN
+F 2 "" H 9700 3350 50  0000 C CNN
+F 3 "" H 9700 3350 50  0000 C CNN
+	1    9700 3350
+	1    0    0    -1  
+$EndComp
+Text Label 8500 1700 0    60   ~ 0
+DensitySelect
+Text Label 9000 1800 0    60   ~ 0
+NC
+Text Label 9000 1900 0    60   ~ 0
+NC
+Text Label 8850 2000 0    60   ~ 0
+Index
+Text Label 8500 2100 0    60   ~ 0
+MotorEnableA
+Text Label 8550 2200 0    60   ~ 0
+DriveSelectB
+Text Label 8550 2300 0    60   ~ 0
+DriveSelectA
+Text Label 8500 2400 0    60   ~ 0
+MotorEnableB
+Text Label 8700 2500 0    60   ~ 0
+Direction
+Text Label 8900 2600 0    60   ~ 0
+Step
+Text Label 8700 2700 0    60   ~ 0
+WriteData
+Text Label 8300 2800 0    60   ~ 0
+FloppyWriteEnable
+Text Label 8750 2900 0    60   ~ 0
+Track00
+Text Label 8550 3000 0    60   ~ 0
+WriteProtect
+Text Label 8700 3100 0    60   ~ 0
+ReadData
+Text Label 8600 3200 0    60   ~ 0
+HeadSelect
+Text Label 8250 3300 0    60   ~ 0
+DiskChange/Ready
+Wire Wire Line
+	1950 4150 2100 4150
+Wire Wire Line
+	1950 1750 1950 4250
+Wire Wire Line
+	2100 4050 1950 4050
+Connection ~ 1950 4150
+Wire Wire Line
+	2100 3950 1950 3950
+Connection ~ 1950 4050
+Wire Wire Line
+	2100 3850 1950 3850
+Connection ~ 1950 3950
+Wire Wire Line
+	1950 1750 2100 1750
+Connection ~ 1950 3850
+Wire Wire Line
+	2100 1850 1950 1850
+Connection ~ 1950 1850
+Wire Wire Line
+	2100 1950 1950 1950
+Connection ~ 1950 1950
+Wire Wire Line
+	2100 2050 1950 2050
+Connection ~ 1950 2050
+Wire Wire Line
+	2100 2150 1950 2150
+Connection ~ 1950 2150
+Wire Wire Line
+	2100 2250 1950 2250
+Connection ~ 1950 2250
+Wire Wire Line
+	2100 2350 1950 2350
+Connection ~ 1950 2350
+Wire Wire Line
+	2100 2450 1950 2450
+Connection ~ 1950 2450
+Wire Wire Line
+	2100 2550 1950 2550
+Connection ~ 1950 2550
+Wire Wire Line
+	2100 2650 1950 2650
+Connection ~ 1950 2650
+Wire Wire Line
+	2100 2750 1950 2750
+Connection ~ 1950 2750
+Wire Wire Line
+	2100 2850 1950 2850
+Connection ~ 1950 2850
+Wire Wire Line
+	2100 2950 1950 2950
+Connection ~ 1950 2950
+Wire Wire Line
+	2100 3050 1950 3050
+Connection ~ 1950 3050
+Wire Wire Line
+	2100 3150 1950 3150
+Connection ~ 1950 3150
+Wire Wire Line
+	2100 3250 1950 3250
+Connection ~ 1950 3250
+Wire Wire Line
+	2100 3350 1950 3350
+Connection ~ 1950 3350
+Wire Wire Line
+	2100 3450 1950 3450
+Connection ~ 1950 3450
+Wire Wire Line
+	2100 3550 1950 3550
+Connection ~ 1950 3550
+Wire Wire Line
+	2100 3650 1950 3650
+Connection ~ 1950 3650
+Wire Wire Line
+	2100 3750 1950 3750
+Connection ~ 1950 3750
+Wire Wire Line
+	2600 1750 4900 1750
+Wire Wire Line
+	2600 2050 4900 2050
+Wire Wire Line
+	2600 2150 4900 2150
+Wire Wire Line
+	2600 2250 4900 2250
+Wire Wire Line
+	2600 2350 4900 2350
+Wire Wire Line
+	2600 2450 4900 2450
+Wire Wire Line
+	2600 1850 4900 1850
+Wire Wire Line
+	2600 2550 4900 2550
+Wire Wire Line
+	2600 2650 5850 2650
+Wire Wire Line
+	2600 2750 5850 2750
+Wire Wire Line
+	2600 2950 5750 2950
+Wire Wire Line
+	4900 2850 2600 2850
+Wire Wire Line
+	2600 3050 5650 3050
+Wire Wire Line
+	4900 3150 2600 3150
+Wire Wire Line
+	2600 3250 4900 3250
+Wire Wire Line
+	2600 3350 5950 3350
+Wire Wire Line
+	2600 3450 6050 3450
+Wire Wire Line
+	2600 3550 6150 3550
+Wire Wire Line
+	2600 3650 6250 3650
+Wire Wire Line
+	2600 3750 6350 3750
+Wire Wire Line
+	2600 3850 6450 3850
+Wire Wire Line
+	2600 3950 6550 3950
+Wire Wire Line
+	2600 4050 4900 4050
+Wire Wire Line
+	2600 4150 4900 4150
+Wire Wire Line
+	9700 1700 9700 3350
+Wire Wire Line
+	9700 1700 9600 1700
+Wire Wire Line
+	9600 1800 9700 1800
+Connection ~ 9700 1800
+Wire Wire Line
+	9700 1900 9600 1900
+Connection ~ 9700 1900
+Wire Wire Line
+	9600 2000 9700 2000
+Connection ~ 9700 2000
+Wire Wire Line
+	9700 2100 9600 2100
+Connection ~ 9700 2100
+Wire Wire Line
+	9600 2200 9700 2200
+Connection ~ 9700 2200
+Wire Wire Line
+	9600 2300 9700 2300
+Connection ~ 9700 2300
+Wire Wire Line
+	9700 2400 9600 2400
+Connection ~ 9700 2400
+Wire Wire Line
+	9600 2500 9700 2500
+Connection ~ 9700 2500
+Wire Wire Line
+	9700 2600 9600 2600
+Connection ~ 9700 2600
+Wire Wire Line
+	9600 2700 9700 2700
+Connection ~ 9700 2700
+Wire Wire Line
+	9700 2800 9600 2800
+Connection ~ 9700 2800
+Wire Wire Line
+	9600 2900 9700 2900
+Connection ~ 9700 2900
+Wire Wire Line
+	9700 3000 9600 3000
+Connection ~ 9700 3000
+Wire Wire Line
+	9600 3100 9700 3100
+Connection ~ 9700 3100
+Wire Wire Line
+	9700 3200 9600 3200
+Connection ~ 9700 3200
+Wire Wire Line
+	9600 3300 9700 3300
+Connection ~ 9700 3300
+Wire Wire Line
+	9100 1700 7900 1700
+Wire Wire Line
+	9050 1800 7900 1800
+Wire Wire Line
+	9100 1900 7900 1900
+Wire Wire Line
+	5850 2000 9100 2000
+Wire Wire Line
+	5650 2200 9100 2200
+Wire Wire Line
+	5750 2300 9100 2300
+Wire Wire Line
+	5950 2500 9100 2500
+Wire Wire Line
+	6050 2600 9100 2600
+Wire Wire Line
+	6150 2700 9100 2700
+Wire Wire Line
+	6250 2800 9100 2800
+Wire Wire Line
+	6350 2900 9100 2900
+Wire Wire Line
+	6450 3000 9100 3000
+Wire Wire Line
+	6550 3100 9100 3100
+Wire Wire Line
+	9100 3200 7900 3200
+Wire Wire Line
+	5850 3300 9100 3300
+Wire Wire Line
+	6350 3750 6350 2900
+Wire Wire Line
+	6550 3950 6550 3100
+Wire Wire Line
+	6450 3850 6450 3000
+Wire Wire Line
+	6250 3650 6250 2800
+Wire Wire Line
+	6150 3550 6150 2700
+Wire Wire Line
+	6050 3450 6050 2600
+Wire Wire Line
+	5950 3350 5950 2500
+Wire Wire Line
+	5850 2750 5850 3300
+Wire Wire Line
+	5850 2650 5850 2000
+Wire Wire Line
+	5750 2950 5750 2300
+Wire Wire Line
+	5650 3050 5650 2200
+Wire Wire Line
+	9100 2100 7150 2100
+Wire Wire Line
+	7000 2400 9100 2400
+$Comp
+L 7402 U?
+U 1 1 5B64DE90
+P 6100 1550
+F 0 "U?" H 6100 1600 50  0000 C CNN
+F 1 "7402" H 6150 1500 50  0000 C CNN
+F 2 "" H 6100 1550 50  0000 C CNN
+F 3 "" H 6100 1550 50  0000 C CNN
+	1    6100 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2100 7150 1450
+Wire Wire Line
+	7150 1450 6700 1450
+Wire Wire Line
+	6700 1650 7000 1650
+Wire Wire Line
+	7000 1650 7000 2400
+Wire Wire Line
+	5500 1550 5500 1950
+Wire Wire Line
+	5500 1950 2600 1950
+$EndSCHEMATC
