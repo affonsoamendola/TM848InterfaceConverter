@@ -4,3 +4,4 @@ Schematics and research relating to converting the IO-Signals from an Tandon TM-
 
 The drive has a standard 50-pin interface (Shugart)
 
+Still WIP, this *should* work... I think... I hope...
